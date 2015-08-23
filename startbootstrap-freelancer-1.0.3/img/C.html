@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>...</title>
+	<style>
+		@-moz-keyframes blink {
+			from { color: red    }
+			to   { color: yellow }
+		}
+		@-webkit-keyframes blink {
+			from { color: red    }
+			to   { color: yellow }
+		}
+		#blinker {
+			-webkit-animation-direction: alternate;
+			-webkit-animation-duration: 1s;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-name: blink;
+			-moz-animation: alternate 1s infinite blink;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="blinker">I'm not annoying you, am I?</h1>
+</body>
+</html>

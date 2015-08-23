@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>...</title>
+	<style>
+		#blinker    { color: red    }
+		#blinker.on { color: yellow }
+	</style>
+	<script>
+		var blinker;
+		function blink() {
+			blinker.className = blinker.className ? "" : "on";
+		}
+		window.onload = function() {
+			blinker = document.getElementById("blinker");
+			var interval_id = setInterval(blink, 1000);
+		}
+	</script>
+</head>
+<body>
+	<h1 id="blinker">I'm not annoying you, am I?</h1>
+	<img class="img-responsive CattoBorderRadius" src="http://placekitten.com/g/200/200" />
+</body>
+</html>
